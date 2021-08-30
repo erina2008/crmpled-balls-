@@ -1,7 +1,7 @@
 class paper{
 constructor(x,y,r){
 var options={
-isStatic:false,
+//isStatic:false,
 restitution:0.3,
 friction:0,
 density:1.2
@@ -20,11 +20,11 @@ World.add(world, this.body);
 			var paperpos=this.body.position;		
 			push()
 			translate(paperpos.x, paperpos.y);
-			strokeWeight(4);
-			stroke("black");
-			fill("white");
+			//strokeWeight(4);
+			//stroke("black");
+			//fill("white");
 			//ellipse( 0, 0, this.r, this.r);
-            image(this.image, 800,400,100, 100);
+            image(this.image, 0,0,this.r, 50);
 			pop()
 	}
 
